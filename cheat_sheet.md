@@ -17,7 +17,8 @@ ZZ   保存退出
 
 cat  **  显示文档内容
 
-git add **  将工作区文件保存至暂存区
+git add **  将工作区文件**保存至暂存区
+git add .   将工作区所有文件保存至暂存区
 git commit -m "**"   将暂存区文件提交，并添加注释
 git status  查看git的状态
 git diff    查看git修改内容
@@ -29,11 +30,25 @@ ssh-keygen -t rsa -C "email"  创建git公钥
 git remote add **(origin) git@github.com:bigdriver/learngit  将当前仓库连接至远程库
 git push origin master   推送到origin的master分支
 首次推送  git push -u origin master
-git clone origin git@github.com:bigdriver/learngit  克隆远程库至本地库
+git clone git@github.com:bigdriver/learngit  克隆远程库至本地库
 git branch   查看所有分支和当前分支
 git branch **   创建分支**
+git branch -d **  删除分支**
 git checkout -b **  创建并切换至分支**
 git checkout **   切换至分支**
+
+
+git tag <tag-name>/v1.0  标记当前版本
+git tag -d <tag-name>  删除标签
+git tag   查看所有标签
+git tag v1.0  f52c633 标记版本f52c633
+git show v1.0 查看标签信息
+git tag -a v1.0 -m "**"   创建带说明**的v1.0标签
+git push origin <tagname>  推送一个本地标签
+git push origin --tags   推送所以标签
+
+git remote -v   查看关联的远程库
+
 
 
 
