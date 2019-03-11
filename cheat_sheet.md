@@ -28,7 +28,11 @@ git reset --hard **/HEAD^ 版本库回到版本**
 
 ssh-keygen -t rsa -C "email"  创建git公钥
 git remote add **(origin) git@github.com:bigdriver/learngit  将当前仓库连接至远程库
+git remote -v    查看当前所有连接的远程库
+git remote rm **(origin)
+
 git push origin master   推送到origin的master分支
+
 首次推送  git push -u origin master
 git clone git@github.com:bigdriver/learngit  克隆远程库至本地库
 git branch   查看所有分支和当前分支
@@ -45,9 +49,12 @@ git tag v1.0  f52c633 标记版本f52c633
 git show v1.0 查看标签信息
 git tag -a v1.0 -m "**"   创建带说明**的v1.0标签
 git push origin <tagname>  推送一个本地标签
-git push origin --tags   推送所以标签
+git push origin --tags   推送所有标签
 
-git remote -v   查看关联的远程库
+git merge <branch>  合并分支<branch>到当前分支
+
+
+
 
 
 
